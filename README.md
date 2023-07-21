@@ -10,9 +10,16 @@ sudo raspi-config
 Inside of the configuration helper select the following options:
 ```
 3 Interface Options
+I5 I2C
+ARM I2C interface enabled? Yes
+3 Interace Options (again)
 I6 Serial Port
 Login shell over serial? No
 Serial port hardware enabled? Yes
+```
+## Debian libraries installation (for Pillow)
+```sh
+sudo apt-get update && sudo apt-get install libopenjp2-7
 ```
 
 ## Install the library
